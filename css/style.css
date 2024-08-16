@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.original {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.line {
+    text-align: center;
+    width: 2px;
+    height: 100vh;
+    background: #000;
+}
+
+.copy {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+/* .copy-elem {
+    background: #004dff;
+    width: 185px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+} */
+
+
+span {
+    margin-left: 5px;
+}
+
+button {
+    border-radius: 5px;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 45px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 100px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:disabled {
+    opacity: 0.5;
+}
+
+button:disabled:hover {
+    border-color: #000;
+    color: #000;
+    fill: #000;
+}
+
+button:disabled:active {
+    border-color: #000;
+    color: #000;
+    fill: #000;
+}
+
+button:focus {
+    color: #171e29;
+}
+
+button:hover {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+}
+
+button:active {
+    border-color: #06f;
+    color: #06f;
+    fill: #06f;
+}
+
+@media (min-width: 768px) {}
+
+
+.copy-elem {
+    border-radius: 5px;
+    align-items: center;
+    background-color: #004dff;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    height: 45px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 100px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease-in;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.copy-elem:focus {
+    color: #171e29;
+}
+
+.copy-elem:hover {
+    background: #000;
+    border-color: #fff;
+    color: #fff;
+    fill: #fff;
+}
+
+.copy-elem:active {
+    background: #000;
+    border-color: #fff;
+    color: #fff;
+    fill: #fff;
+}
+
+@media (min-width: 768px) {
+    .copy-elem {
+        min-width: 170px;
+    }
+
+    button {
+        min-width: 170px;
+    }
+}
